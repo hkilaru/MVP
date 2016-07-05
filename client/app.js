@@ -1,9 +1,9 @@
-angular.module('nutriSearch', ['searchBar','ngRoute'])
+angular.module('nutriSearch', ['main', 'ngRoute'])
 
 .config(function($routeProvider){
 	$routeProvider
 		.when('/', {
-			templateUrl: 'main.html',
-			controller: 'searchController'
+			templateUrl: 'main/main.html',
+			controller: 'mainController'
 		})
 })

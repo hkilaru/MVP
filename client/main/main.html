@@ -1,0 +1,13 @@
+<div ng-controller = 'mainController'>
+		<h1> NutriSearch </h1>
+		<input id='search' ng-model= 'input'> 
+		<button id='submit' ng-click= 'clickFunc()'>Search </button>
+		<ul class = 'results'>
+			<li ng-repeat='food in results.all'>
+				<div class='name'> Name: {{food.name}} </div>
+				<div class='calories'> Calories : {{food.calories}}</div>
+				<div class='fat'> Total Fat(g): {{food.fat}}</div>
+			</li>
+
+		</ul>
+</div>
