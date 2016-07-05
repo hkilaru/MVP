@@ -3,6 +3,7 @@ angular.module('main', [])
 .controller('mainController', function($scope, $http) {
 	var endP = 'https://api.nutritionix.com/v1_1/search -H'
 	$scope.input = ''
+	$scope.show = false;
 	$scope.results = {
 		"Name": $scope.input,
 		"Calories": null,
@@ -26,7 +27,7 @@ angular.module('main', [])
 	      method: 'GET',
 	      url: endP,
 	     }).success(function(data){
-	     
+	     $scope.show = true;
 	      for(var i = 0; i < 10; i++) {
 	      	var newFood = {
 	      		"Name": null,
