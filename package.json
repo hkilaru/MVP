@@ -29,6 +29,7 @@
     "body-parser": "^1.4.3",
     "express": "^4.4.5",
     "jwt-simple": "^0.2.0",
+    "nutritionix": "^0.6.1",
     "q": "^1.0.1",
     "request": "^2.36.0"
   }
