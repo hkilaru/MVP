@@ -1,11 +1,48 @@
 h1 {
   font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
   font-style: bold;
-  color: green;
+  color: white;
 }
 
 .result {
-color: green;
+color: white;
 font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
 margin-bottom: 10px;
+}
+
+.error {
+	color: red;
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+}
+
+h2 {
+  font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  color: white;
+}
+
+.center {
+	width:300px;
+	height:200px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-100px 0 0 -150px;
+	text-align: center;
+}
+
+body{
+	background-color: green;
+}
+
+input {
+	width: 294px;
+	left:50%;
+	margin-bottom: 10px;
+
+}
+button {
+	font-weight: bold;
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+
 }
