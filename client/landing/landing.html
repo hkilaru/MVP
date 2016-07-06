@@ -1,5 +1,10 @@
 <div class = "landing center" ng-controller= 'landingController'>
-	<h2> NutriSearch </h2>
-	<input id='search' ng-model= 'input'> 
-	<button id='submit' ng-click= 'initialSearch(input)'>Search </button>
+	<h2 ng-hide='soylent'> NutriSearch </h2>
+	<input id='search' ng-model= 'input' ng-hide='soylent' placeholder="Enter a food"> 
+	<button id='submit' ng-click= 'initialSearch(input)' ng-hide='soylent'>Search </button>
+
+	<div class='soylent' ng-show='soylent'>
+		<iframe ng-show='soylent' src="//giphy.com/embed/1456BVmlt3zRa8" width="480" height="480" frameBorder="0" class="giphy-embed"></iframe><p><a href="https://giphy.com/gifs/1456BVmlt3zRa8"></a></p>
+	</div>	
+
 </div>

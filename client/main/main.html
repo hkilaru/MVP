@@ -1,8 +1,13 @@
 <div ng-controller = 'mainController'>
 		<h1> NutriSearch </h1>
-		<input id='search' ng-model= 'input'> 
-		<button id='submit' ng-click= 'getData(input)'>Search </button>
-		<ul class = 'results'>
+		<input id='search' ng-model= 'input' ng-hide='soylent'> 
+		<button id='submit' ng-click= 'getData(input)' ng-hide='soylent'>Search </button>
+
+		<div class='soylent' ng-show='soylent'>
+			<iframe src="//giphy.com/embed/1456BVmlt3zRa8" width="480" height="480" frameBorder="0" class="giphy-embed"></iframe><p><a href="https://giphy.com/gifs/1456BVmlt3zRa8"></a></p>
+		</div>		
+
+		<ul class = 'results' ng-hide='soylent'>
 			<li class='result' ng-model= 'results' ng-repeat='food in results' ng-show='show'>
 				<div class='name'> Name: {{food.name}} </div>
 				<div class='calories'> Calories : {{food.calories}}</div>

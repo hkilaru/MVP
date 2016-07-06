@@ -5,8 +5,14 @@ angular.module('landing', [])
 	$scope.results = {
 		all: []
 	}
+	$scope.soylent = false;
+
 	$scope.initialSearch = function(param) {
 		console.log('initialSearch clicked');
+		if(param === "soylent") {
+			$scope.soylent = true;
+		}
+		else {
 		retrieve.clickFunc(param)
 			.then(function(foods){
 				console.log('switching views');
@@ -32,6 +38,7 @@ angular.module('landing', [])
 			      $location.path('/main');	     
 		  		}	
 		
-	})
+		})
+	}
 
 }})

@@ -4,6 +4,14 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 300%;
+  font-style: normal;
+  color: white;
+}
+
+
 .result {
 color: white;
 font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
@@ -15,11 +23,6 @@ margin-bottom: 10px;
 	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
 }
 
-h2 {
-  font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
-  font-style: normal;
-  color: white;
-}
 
 .center {
 	width:300px;
@@ -36,6 +39,7 @@ body{
 }
 
 input {
+	height: 15px;
 	width: 294px;
 	left:50%;
 	margin-bottom: 10px;
@@ -45,4 +49,8 @@ button {
 	font-weight: bold;
 	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
 
+}
+.soylent {
+	display:block;
+	margin: 0 auto;
 }
