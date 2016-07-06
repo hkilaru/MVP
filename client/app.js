@@ -15,7 +15,6 @@ angular.module('nutriSearch', ['main', 'landing', 'ngRoute'])
 	var transferData;
 	var setData = function(data) {
 		this.transferData = data;
-		console.log("transferData IN APP", transferData);
 	}
 	var endP = 'https://api.nutritionix.com/v1_1/search -H'
 	var input = input;

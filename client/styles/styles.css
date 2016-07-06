@@ -2,6 +2,7 @@ h1 {
   font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
   font-style: bold;
   color: white;
+  margin-left: 5px;
 }
 
 h2 {
@@ -11,6 +12,24 @@ h2 {
   color: white;
 }
 
+body{
+	background-color: green;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+button {
+	font-weight: bold;
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+
+}
+input {
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
 
 .result {
 color: white;
@@ -21,6 +40,7 @@ margin-bottom: 10px;
 .error {
 	color: red;
 	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+	font-style: 
 }
 
 
@@ -34,22 +54,6 @@ margin-bottom: 10px;
 	text-align: center;
 }
 
-body{
-	background-color: green;
-}
-
-input {
-	height: 15px;
-	width: 294px;
-	left:50%;
-	margin-bottom: 10px;
-
-}
-button {
-	font-weight: bold;
-	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
-
-}
 .soylent {
 	display:block;
 	margin: 0 auto;
