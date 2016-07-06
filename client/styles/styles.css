@@ -1,5 +1,11 @@
 h1 {
-  font-style: italic;
+  font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+  font-style: bold;
   color: green;
 }
 
+.result {
+color: green;
+font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+margin-bottom: 10px;
+}

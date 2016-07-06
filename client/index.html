@@ -9,6 +9,17 @@
 			<div ng-view></div>
 	</body>
 
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBgPTk3x68zAKGd1V7vgJq57Bl-tHgg0_I",
+    authDomain: "mks-mvp-efa8f.firebaseapp.com",
+    databaseURL: "https://mks-mvp-efa8f.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular-route/angular-route.js"></script>
 
