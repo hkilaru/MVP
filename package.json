@@ -5,6 +5,9 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "6.2.2"
+  },
   "devDependencies": {
     "browser-sync": "^1.5.7",
     "clone-stats": "0.0.1",
