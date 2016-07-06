@@ -6,6 +6,8 @@ angular.module('landing', [])
 		all: []
 	}
 	$scope.soylent = false;
+	$scope.error = false;
+
 
 	$scope.initialSearch = function(param) {
 		console.log('initialSearch clicked');
@@ -17,8 +19,7 @@ angular.module('landing', [])
 			.then(function(foods){
 				console.log('switching views');
 				if(foods.data.hits.length === 0) {
-			     	// $scope.show = false;
-			     	// $scope.error = true;
+			     	$scope.error = true;
 		     	}
 			     else {
 			     	// $scope.show = true;

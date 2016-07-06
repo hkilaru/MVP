@@ -11,6 +11,7 @@ angular.module('main', [])
 	$scope.getData = function(param) {
 		if(param === "soylent") {
 			$scope.soylent = true;
+			$scope.error=false;
 		}
 		else {
 			retrieve.clickFunc(param)
@@ -21,6 +22,7 @@ angular.module('main', [])
 			     	}
 				     else {
 				     	$scope.show = true;
+				     	$scope.error=false;
 				 	
 				      for(var i = 0; i < 10; i++) {
 				      	var newFood = {
